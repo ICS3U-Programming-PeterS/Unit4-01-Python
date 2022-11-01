@@ -27,7 +27,7 @@ def main():
             # calculate the sum of all numbers from 0 to user number
             while loop_counter <= user_num:
                 sum = sum + loop_counter
-                print("Tracking {} times through loop.".format(loop_counter))
+                print("Tracking {} time(s) through loop.".format(loop_counter))
                 loop_counter = loop_counter + 1
 
             print("\nThe sum of the numbers from 0 to {} is: {}.".format(user_num, sum))
