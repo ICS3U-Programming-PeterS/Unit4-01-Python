@@ -17,10 +17,16 @@ def main():
     user_number_string = input("Enter a positive integer: ")
     print("")
 
+    # try catch for erroneous data
     try:
+        # set user_num = int(user_num_string)
         user_num = int(user_number_string)
+
+        # if statement for if user_num is a negative
         if user_num < 0:
             print("\n" + user_num + " is not a positive integer.")
+
+        # else if user_num is 0
         elif user_num == 0:
             print("0 is not a positive integer.")
         else:
@@ -30,9 +36,14 @@ def main():
                 print("Tracking {} time(s) through loop.".format(loop_counter))
                 loop_counter = loop_counter + 1
 
+            # display the sum of the numbers
             print("\nThe sum of the numbers from 0 to {} is: {}.".format(user_num, sum))
+
+    # exception for strings and floats
     except:
         print(user_number_string + " is not a positive integer.")
+
+    # display ending message
     finally:
         print("Thanks for playing!")
 
